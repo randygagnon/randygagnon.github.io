@@ -1,8 +1,8 @@
 ---
 title: Configure Tailscale on pfSense
 layout: post
-categories: [DevOps,Terraform]
-tags: [nat reflection,hairpinning,nat,pat,pfsense,proxy]
+categories: [Networking,Security]
+tags: [pfense,firewall,vpn,tailscale]
 ---
 
 ## Intro
@@ -25,7 +25,7 @@ First head over to the [Tailscale website](https://tailscale.com/) and create an
 The account and all devices were torn down prior to publishing this post
 Next, go ahead and set up all your devices based on the instructions the site provides. Linux does not have a GUI, so after you install it, you'll need to bring the service up with
 
-    sudo tailscale up
+`sudo tailscale up`
 
 Later we'll enable features like an exit node and routes, but first, let's just get all of our end devices onto the network.
 
@@ -57,13 +57,13 @@ Great! Your pfSense router is now configured to use your Tailscale VPN overlay. 
 
 I'll skip the VM setup to keep this short but after setting it up, go ahead and use the script Tailscale gave us to install the client
 
-    curl -fsSL https://tailscale.com/install.sh | sh
+`curl -fsSL https://tailscale.com/install.sh | sh`
 
 ![Install and run Tailscale on Linux](/assets/images/install-and-run-ts-on-linux.gif)
 
 After it's installed we can bring the service up but you'll want to specifically point to the exit node and accept the advertised routes. So we can do that with the following:
 
-    sudo tailscale up --accept-routes --exit-node=123.231.132.123 --exit-node-allow-lan-access
+`sudo tailscale up --accept-routes --exit-node=123.231.132.123 --exit-node-allow-lan-access`
 
 Now let's check that we can get to a service hosted behind the pfSense router - here I'm testing a Truenas Scale server
 
