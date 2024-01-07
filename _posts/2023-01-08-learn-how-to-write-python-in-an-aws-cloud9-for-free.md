@@ -58,7 +58,8 @@ Congratulations! You've run a Python script in the cloud!
 
 ## Make your code do something
 
-![](__GHOST_URL__/content/images/2023/01/image-5.png)
+![do something](/assets/images/do-something.png)
+
 To add functionality to Python we can install modules such as **boto3**. [Boto3 is an SDK written by AWS](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) that allows Python to interface with the AWS API. This lets us use Python to make AWS do things for us like... Create S3 buckets!
 
 In the bottom half of the IDE, switch over to the bash tab and check that pip is installed(which it is), and then install boto3 with:
@@ -148,7 +149,7 @@ Create a new Run Configuration like we did before and use this as the command, b
 
 Go ahead and run the code
 
-### A few notes:
+## A few notes
 
 Boto3 has a strange behavior where it will create a bucket in your default region when you don't specify **locationconstraint**. But our code does specify the constraint so if your default region is us-east-1, then set us-east-2 as your s3 region. [Here is some documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-creating-buckets.html) where they account for this.
 
@@ -162,6 +163,6 @@ Here is what the code is supposed to do:
   <source src="/assets/images/run-the-code.webm" type="video/webm">
 </video>
 
-Congrats! You've now completed the bonus exercise of having your python code actually do something useful! Pat yourself on the back, cause next up we'll do something even better. Maybe a lambda? 
+Congrats! You've now completed the bonus exercise of having your python code actually do something useful! Pat yourself on the back, cause next up we'll do something even better. Maybe a lambda?
 
-![](__GHOST_URL__/content/images/2023/01/image.png)
+![you're awesome](/assets/images/whos-awesome.png)
