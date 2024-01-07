@@ -1,8 +1,8 @@
 ---
 title: An open source, secure, and easy to set up personal VPN
 layout: post
-categories: [talescale,wireguard, networking, security, firewall]
-tags: [vpn,security,mfa,firewalls,encryption,MITM,tailscale,wireguard]
+categories: [networking,security]
+tags: [vpn,security,mfa,firewalls,encryption,mitm,tailscale,wireguard]
 ---
 
 # An open source, secure, and easy to set up personal VPN

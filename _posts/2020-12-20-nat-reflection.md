@@ -1,7 +1,7 @@
 ---
 title: I just forwarded a port and it works from the internet, but not my network!
 layout: post
-categories: [networking, nat, firewall]
+categories: [networking,nat]
 tags: [nat reflection,hairpinning,nat,pat,pfsense,proxy]
 ---
 
