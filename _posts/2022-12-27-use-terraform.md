@@ -4,6 +4,7 @@ layout: post
 categories: [DevOps,Terraform]
 tags: [nat reflection,hairpinning,nat,pat,pfsense,proxy]
 ---
+
 ## Preface
 
 At some point I want to blow away my old Proxmox cluster and rebuild it— maybe as Proxmox with Ceph? Maybe Harvester? Who knows. For now, I’m using a basic 4 node Proxmox cluster(without ceph) that I already have running configured with a couple NFS shares.
@@ -74,10 +75,4 @@ If everything was successful you can now SSH into the VM with putty configured w
 
 ## References
 
-[
-
-Cloud-Init Support - Proxmox VE
-
-![](https://pve.proxmox.com/favicon.ico)Proxmox VE
-
-](https://pve.proxmox.com/wiki/Cloud-Init_Support)
+Cloud Init Support - [https://pve.proxmox.com/wiki/Cloud-Init_Support](https://pve.proxmox.com/wiki/Cloud-Init_Support)
