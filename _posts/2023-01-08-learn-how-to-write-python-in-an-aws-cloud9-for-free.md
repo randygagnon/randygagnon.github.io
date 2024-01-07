@@ -2,7 +2,7 @@
 title: Learn how to write Python in an AWS Cloud9 for free!
 layout: post
 categories: [DevOps,Python]
-tags: [pfense,firewall,vpn,tailscale]
+tags: [cloud9,python,s3]
 ---
 
 There probably isn't a better place to learn than on Cloud9. You won't have to worry about setting up your machine, installing dependencies, updates, etc. Just spin up an instance in the free tier and away you go!
