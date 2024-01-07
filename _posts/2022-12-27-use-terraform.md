@@ -12,9 +12,9 @@ At some point I want to blow away my old Proxmox cluster and rebuild it— maybe
 
 Open up the CLI for your Proxmox host and pull down the latest Ubuntu LTS cloud image. You can use the GUI and go to the “shell” under the host or you can use putty to ssh to it. I prefer putty because it doesn’t constantly close and reopen my session the second I click away, but the GUI is much more convenient.
 
-![proxmox](assets/images/proxmox.png)
+![proxmox](/assets/images/proxmox.png)
 
-As of this writing, the latest LTS is Focal Fossa(20.04) and will be EoS in April 2025. You can find the [latest releases here](http://cloud-images.ubuntu.com/releases/).
+As of this writing, the latest LTS is Focal Fossa(20.04) and will be EoS in April 2025. You can find the [latest releases here](https://cloud-images.ubuntu.com/releases/).
 
     wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
 
@@ -70,7 +70,7 @@ Next we’ll use cloud-init to assign user/pass(optional), SSH keys and an IP ad
 
 If everything was successful you can now SSH into the VM with putty configured with your ssh key. If you didn’t specify a username above, the default will be “ubuntu”.
 
-![Success](assets/images/clonedvmcli.png)
+![Success](/assets/images/clonedvmcli.png)
 
 ## References
 
