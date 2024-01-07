@@ -7,7 +7,7 @@ tags: [nat reflection,hairpinning,nat,pat,pfsense,proxy]
 
 # NAT Reflection
 
-![Wall of Fire](../assets/wall-of-fire-19885-1.jpg)
+![Wall of Fire](wall-of-fire-19885-1.jpg)
 
 If this just happened to you and you're confused about why, read on as we cover NAT Reflection aka NAT Hairpinning or NAT Loopback.
 
@@ -32,7 +32,7 @@ Now lets take a look at how you would do that in pfsense:
 - Locate the **Network Address Translation** section of the page
 - Configure the NAT Reflection options as follows:
 
-![Alt text](../assets/screenshot-from-2022-12-20-13-16-05.png)
+![Alt text](screenshot-from-2022-12-20-13-16-05.png)
 
 There are three available choices for NAT Reflection mode for port forwards, they are:
 
